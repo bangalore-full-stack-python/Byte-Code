@@ -1,0 +1,43 @@
+{%extends "structure.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block body %}
+	<div style="margin-left: 10px;">
+		<h1>Topic Name</h1>
+		<div class="topic-main">
+			<div class="topic-content">
+				<div class="video">
+					<video width="600" height="450" controls>
+						<source src="{% static 'images/test_video.mp4' %}" type="video/mp4">
+					</video>
+				</div>
+				<div class="theory">
+					<h4>Topic Overview</h4>
+					<p>Text Theory</p>
+				</div>
+				<div class="cookbook">
+					<h4>Cookbook Recipes</h4>
+				</div>
+				<div class="screen">
+					<h4>Screen Casts</h4>
+				</div>
+			</div>
+			<div class="topic-content" style="float: right;">
+				<div class="shell">
+					<h3>Shell</h3>
+				</div>
+				<div class="editor">
+					<h3>Python/JavaScript Editor</h3>
+				</div>
+				<div>
+					<h3>Connect</h3>
+					<ul>
+						<li class="con"><i class="fa fa-github"></i> <a href="https://www.github.com" target="_blank">Github</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

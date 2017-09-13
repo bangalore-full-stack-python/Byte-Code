@@ -1,0 +1,30 @@
+{%extends "structure.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block body %}
+	<h1 class="path">Courses</h1>
+	<div class="path-main" align="center">
+		<div class="path-content">
+			<h4 class="path-text"><img src="" class="full"><a href="course_template/">Computer Science Basics</a></h4>
+		</div>
+		<div class="path-content">
+			<h4 class="path-text"><img src="" class="full">Python Basics</h4>
+		</div>
+		<br>
+		<div class="path-content">
+			<h4 class="path-text"><img src="" class="full">Advanced Python</h4>
+		</div>
+		<div class="path-content">
+			<h4 class="path-text"><img src="" class="full">Databases</h4>
+		</div>
+		<br>
+		<div class="path-content">
+			<h4 class="path-text"><img src="" class="full">Front-End</h4>
+		</div>
+		<div class="path-content">
+			<h4 class="path-text"><img src="" class="full">Back-End</h4>
+		</div>
+	</div>
+{% endblock %}

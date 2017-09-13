@@ -1,0 +1,52 @@
+{%extends "structure.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block banner %}
+	<div class="jumbotron">
+		<div class="promo-main">
+			<div class="promo" id="promo-title">
+				<h4 class="pro">Code</h4>
+				<h4 class="pro">Create</h4>
+				<h4 class="pro">Conquer</h4>
+			</div>
+			<div class="promo" id="promo-desc">
+				<h4 class="promo-tabs">Full-Stack. Data Science.<br>Python. JavaScript.</h4>
+				<p>Join Byte Code to learn, practice, take challenges, participate in quizzes, attend webinars, get interview questions and case studies.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block body %}
+	<div class="info">
+		<div id="work" class="what">
+			<h2>What is Byte Code?</h2>
+			<p>This is a paragraph describing what Byte Code does.<br>This is a paragraph describing what Byte Code does.<br>This is a paragraph describing what Byte Code does.<br>This is a paragraph describing what Byte Code does.<br>This is a paragraph describing what Byte Code does.<br>This is a paragraph describing what Byte Code does.<br>This is a paragraph describing what Byte Code does.</p>
+			<p class="more"><a href="/">Learn More</a></p>
+		</div>
+		<div id="img1" class="what">
+			<img src="">
+		</div>
+	</div>
+	<h2 class="how">How Byte Code works</h2>
+	<div class="how-main">
+		<div class="how-content">
+			<h2>Learn</h2>
+			<img src="{% static 'images/learn.jpeg' %}" class="how-img">
+			<p style="padding: 20px;">Experienced, engaging instructors take you through course material, step by step, in our high-quality video lessons.</p>
+		</div>
+		<div class="how-content">
+			<h2>Practice</h2>
+			<img src="{% static 'images/practice.jpg' %}" class="how-img">
+			<p style="padding: 20px;">Code directly in the browser with our course challenges, bringing to life what you learned and receiving immediate, helpful feedback and code validation.</p>
+		</div>
+		<div class="how-content">
+			<h2>Code Chefs</h2>
+			<img src="{% static 'images/code.png' %}" class="how-img">
+			<p style="padding: 20px;">Rack up points in the challenges and earn badges as you complete each course level, leading up to the coveted course completion badge.</p>
+		</div>
+	</div>
+{% endblock %}

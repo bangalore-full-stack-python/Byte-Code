@@ -1,0 +1,23 @@
+{%extends "structure.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block body %}
+	<h1 class="path">Paths</h1>
+	<div class="path-main" align="center">
+		<div class="path-content">
+			<h4 class="path-text"><img src="{% static 'images/full.jpg' %}" class="full">Full-Stack Web Development</h4>
+		</div>
+		<div class="path-content">
+			<h4 class="path-text"><img src="{% static 'images/data.jpg' %}" class="full">Data Science</h4>
+		</div>
+		<br>
+		<div class="path-content">
+			<h4 class="path-text"><img src="{% static 'images/python.png' %}" class="full">Python</h4>
+		</div>
+		<div class="path-content">
+			<h4 class="path-text"><img src="{% static 'images/js.png' %}" class="full">JavaScript</h4>
+		</div>
+	</div>
+{% endblock %}

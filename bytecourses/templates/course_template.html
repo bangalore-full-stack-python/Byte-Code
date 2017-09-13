@@ -1,0 +1,33 @@
+{%extends "structure.html" %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+{% block body %}
+	<div style="margin-left: 10px;">
+		<h1>Course Name</h1>
+		<h3>Course Overview:</h3>
+		<div class="course-topic" align="center">
+			<div class="topic">
+				<h4><a href="topic_template/">Topic 1</a></h4>
+				<p>This is a small description of the topic.</p>
+			</div>
+			<div class="topic">
+				<h4><a href="#">Topic 2</a></h4>
+				<p>This is a small description of the topic.</p>
+			</div>
+			<div class="topic">
+				<h4><a href="#">Topic 3</a></h4>
+				<p>This is a small description of the topic.</p>
+			</div>
+			<div class="topic">
+				<h4><a href="#">Topic 4</a></h4>
+				<p>This is a small description of the topic.</p>
+			</div>
+			<div class="topic">
+				<h4><a href="#">Topic 5</a></h4>
+				<p>This is a small description of the topic.</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}
